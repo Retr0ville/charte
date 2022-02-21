@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="">
+    <header className="fs-1 fw-bold d-flex align-items-center justify-content-center py-2 mb-4 w-100">
+
+      <a className="img-brand" href="/">
+        <img src="https://img.icons8.com/nolan/64/movie.png" width="50" height="50" className="d-flex" alt="Kando" />
+      </a>
+      <div className="brand">
+        Charte&trade;
+      </div>
+    </header>
+    <Home />
+  </div>
+);
 
 export default App;
